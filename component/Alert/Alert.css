@@ -1,0 +1,13 @@
+.alert {
+    --alert-color: #818182;
+
+    color: color-mix(in srgb, var(--alert-color) 50%, black);
+    background-color: color-mix(in srgb, var(--alert-color) 30%, white);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.alert--success { --alert-color: #2cbf50; }
+.alert--danger { --alert-color: #d13242; }
+.alert--warning { --alert-color: #cf9c05; }
+.alert--info { --alert-color: #15b0c6; }

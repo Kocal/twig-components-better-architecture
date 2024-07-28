@@ -1,0 +1,17 @@
+{% set alert_style = cva({
+    base: 'alert',
+    variants: {
+        type: {
+            'success': 'alert--success',
+            'info': 'alert--danger',
+            'warning': 'alert--warning',
+            'danger': 'alert--info',
+        }
+    }
+}) %}
+
+<div{{ attributes.defaults({'data-controller': 'Alert--alert'}).without('class') }}
+    class="{{ alert_style.apply({type}, attributes.render('class')) }}"
+>
+    {% block content '' %}
+</div>

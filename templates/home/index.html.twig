@@ -1,5 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    Home
+    <div style="display: grid; gap: 10px">
+        <twig:Alert>This is a default message.</twig:Alert>
+        <twig:Alert type="success">This is a success message.</twig:Alert>
+        <twig:Alert type="info">This is an info message.</twig:Alert>
+        <twig:Alert type="warning">This is a warning message.</twig:Alert>
+        <twig:Alert type="danger">This is a danger message.</twig:Alert>
+    </div>
 {% endblock %}

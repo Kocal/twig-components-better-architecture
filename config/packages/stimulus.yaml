@@ -1,3 +1,0 @@
-stimulus:
-    controller_paths:
-        - '%kernel.project_dir%/component'

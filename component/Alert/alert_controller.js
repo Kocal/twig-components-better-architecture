@@ -1,5 +1,5 @@
 import {Controller} from "@hotwired/stimulus";
-import './Alert.css';
+import('./Alert.css');
 
 export default class extends Controller {
     connect() {

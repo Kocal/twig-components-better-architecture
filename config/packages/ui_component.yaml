@@ -1,0 +1,27 @@
+parameters:
+    app.ui_components.dir: '%kernel.project_dir%/component'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\Component\:
+        resource: '%app.ui_components.dir%'
+
+twig:
+    paths:
+        - '%app.ui_components.dir%'
+
+framework:
+    asset_mapper:
+        paths:
+            - '%app.ui_components.dir%'
+
+stimulus:
+    controller_paths:
+        - '%app.ui_components.dir%'
+
+twig_component:
+    defaults:
+        App\Component\: '%app.ui_components.dir%'
